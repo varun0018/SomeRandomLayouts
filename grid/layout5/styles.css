@@ -1,0 +1,47 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 2fr 1fr 5fr 2fr;
+  min-height: 100vh;
+  grid-template-areas:
+    "head head head"
+    "navigation navigation navigation"
+    "section1 main section2"
+    "footer footer footer";
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.head {
+  background-color: aquamarine;
+  grid-area: head;
+}
+.navigation {
+  background-color: blue;
+  grid-area: navigation;
+}
+.section1 {
+  background-color: blueviolet;
+  grid-area: section1;
+}
+.section2 {
+  background-color: blanchedalmond;
+  grid-area: section2;
+}
+.main {
+  background-color: beige;
+  grid-area: main;
+}
+.footer {
+  background-color: wheat;
+
+  grid-area: footer;
+}

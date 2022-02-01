@@ -1,0 +1,45 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.container > * {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px;
+}
+
+.head {
+  background-color: tomato;
+  height: 120px;
+}
+
+footer {
+  background-color: lightgreen;
+  height: 120px;
+}
+
+.body {
+  text-align: left;
+  background-color: deepskyblue;
+  height: 300px;
+  font-size: 24px;
+}
+
+.aside1 {
+  background-color: gold;
+}
+
+.aside2 {
+  background-color: hotpink;
+}

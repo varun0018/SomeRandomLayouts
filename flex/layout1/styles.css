@@ -1,0 +1,45 @@
+.main {
+  padding: 3rem;
+}
+
+.container > * {
+  flex-basis: 100%;
+  /* have same size */
+}
+
+.one {
+  background-color: aqua;
+  border: solid 2px green;
+}
+.two {
+  background-color: beige;
+  border: solid 2px green;
+}
+
+.three {
+  border: solid 2px black;
+  background-color: green;
+}
+.container {
+  display: flex;
+  border: solid 2px black;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container1 {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 90%;
+  margin: 0 auto;
+}
+
+.container1 > * {
+  flex-basis: 0 1 33%;
+}
+.cont {
+  padding: 3rem;
+  background-color: aquamarine;
+  border: 2px solid black;
+}

@@ -1,0 +1,70 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 3fr 3fr 3fr 4fr 2fr;
+  height: 100vh;
+  gap: 0.2rem;
+  text-align: center;
+}
+.header {
+  background-color: aqua;
+}
+.sidebar {
+  background-color: beige;
+}
+.box1 {
+  background-color: aquamarine;
+}
+.box2 {
+  background-color: cadetblue;
+}
+.box3 {
+  background-color: steelblue;
+}
+.main {
+  background-color: chartreuse;
+}
+.footer {
+  background-color: coral;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 4fr 1fr;
+    height: 100vh;
+    grid-template-areas:
+      "header header header header"
+      "box1 box2 box3 sidebar"
+      "main main main sidebar"
+      "footer footer footer footer";
+  }
+  .header {
+    grid-area: header;
+  }
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .box1 {
+    grid-area: box1;
+  }
+  .box2 {
+    grid-area: box2;
+  }
+  .box3 {
+    grid-area: box3;
+  }
+  .main {
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
